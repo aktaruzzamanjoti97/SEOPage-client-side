@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.half-circle-incomplete {
+  width: 50px;
+  height: 30px;
+  background-color: #f00; /* Replace with your desired color */
+  border-radius: 100px 0 0 100px; /* This creates the half circle effect */
+}
+
+.half-circle-todo {
+  width: 50px;
+  height: 30px;
+  background-color: rgb(41, 116, 202); /* Replace with your desired color */
+  border-radius: 100px 0 0 100px; /* This creates the half circle effect */
+}
+
+.half-circle-doing {
+  width: 50px;
+  height: 30px;
+  background-color: rgb(216, 219, 30); /* Replace with your desired color */
+  border-radius: 100px 0 0 100px; /* This creates the half circle effect */
+}
+
+.board {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* 
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+.column {
+  flex: 1;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f2f4f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll; /* Add this line for horizontal scrollbar */
+  max-width: 360px; /* Adjust max-width as needed */
+  height: 100vh;
+}
+
+.shortFont {
+  font-size: 12px;
+}
+
+.column::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+.column::-webkit-scrollbar-track {
+  background-color: #f2f2f2; /* Set the track color */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+.column::-webkit-scrollbar-thumb {
+  background-color: #6c63ff; /* Set the thumb color */
+  border-radius: 6px; /* Round the edges of the thumb */
+}
+
+.totalCount {
+  background-color: #e8eef3;
+  width: 30px;
+  height: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.avatar {
+  width: 35px; /* Adjust the width and height as needed */
+  height: 35px;
+  border-radius: 50%; /* Make the container circular */
+  overflow: hidden; /* Hide any image overflow */
+}
+
+.avatar img {
+  width: 100%; /* Make the image fill the circular container */
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
