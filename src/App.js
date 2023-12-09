@@ -42,6 +42,7 @@ function App() {
         <div className="column">
           <TaskHeader task='Incomplete' colorClass='half-circle-incomplete mx-1' num='0' />
 
+
           <TaskRender fileList={fileList} fileCount={fileCount} setModalShow={setModalShow} />
           <TaskRender fileList={fileList} fileCount={fileCount} setModalShow={setModalShow} />
           <TaskRender fileList={fileList} fileCount={fileCount} setModalShow={setModalShow} />
